@@ -60,373 +60,373 @@ import SignOutBtn from "../support/Page_object/AJI0_POM/SignOutBtn-09";
 
 describe('Cypress Automation of AJIO e-commerce website', () => {
 
-     // Object formation
+    // Object formation
     const loginButton_TS01_PO = new LoginButton_TS01_PO();
-    const loginPage_TS01_PO=new LoginPage_TS01_PO();
-    const loginApplication_TS01_PO=new LoginApplication_TS01_PO();
-    const productLogo_TS02_PO=new ProductLogo_TS02_PO();
-    const menSection_TS02_PO=new MenSection_TS02_PO();
-    const womenSection_TS02_PO=new WomenSection_TS02_PO();
-    const kidsSection_TS02_PO=new KidsSection_TS02_PO();
-    const indieSection_TS02_PO=new IndieSection_TS02_PO();
-    const h_kSection_TS02_PO=new H_KSection_TS02_PO();
-    const customerCare_TS02_PO=new CustomerCare_TS02_PO();
-    const ajioLuxe_TS02_PO=new AjioLuxe_TS02_PO();
-    const addToCart_TS02_PO=new AddToCart_TS02_PO();
-    const wishlist_TS02_PO=new Wishlist_TS02_PO();
-    const postLoginTest_TS02_PO=new PostLoginTest_TS02_PO();
-    const searchbar_TS02_PO=new Searchbar_TS02_PO();
-    const carouselSection_TS03_PO=new CarouselSection_TS03_PO();
-    const menPageCategories_TS03_PO=new MensPageCategories_TS03_PO();
-    const logAllCategories_TS03_PO=new LogAllCategories_TS03_PO();   
-    
-    const homePage = new LandingPage_PO(); 
+    const loginPage_TS01_PO = new LoginPage_TS01_PO();
+    const loginApplication_TS01_PO = new LoginApplication_TS01_PO();
+    const productLogo_TS02_PO = new ProductLogo_TS02_PO();
+    const menSection_TS02_PO = new MenSection_TS02_PO();
+    const womenSection_TS02_PO = new WomenSection_TS02_PO();
+    const kidsSection_TS02_PO = new KidsSection_TS02_PO();
+    const indieSection_TS02_PO = new IndieSection_TS02_PO();
+    const h_kSection_TS02_PO = new H_KSection_TS02_PO();
+    const customerCare_TS02_PO = new CustomerCare_TS02_PO();
+    const ajioLuxe_TS02_PO = new AjioLuxe_TS02_PO();
+    const addToCart_TS02_PO = new AddToCart_TS02_PO();
+    const wishlist_TS02_PO = new Wishlist_TS02_PO();
+    const postLoginTest_TS02_PO = new PostLoginTest_TS02_PO();
+    const searchbar_TS02_PO = new Searchbar_TS02_PO();
+    const carouselSection_TS03_PO = new CarouselSection_TS03_PO();
+    const menPageCategories_TS03_PO = new MensPageCategories_TS03_PO();
+    const logAllCategories_TS03_PO = new LogAllCategories_TS03_PO();
+
+    const homePage = new LandingPage_PO();
     const verifyInput = new VerifyInputTag_TSc04_PO();
-    const validateInput = new ValidateInputValue_TSc04_PO(); 
+    const validateInput = new ValidateInputValue_TSc04_PO();
     const pseudoword = new PseudowordsSearch_TSc04_PO();
     const redirectByDropdown = new RedirectByDropdownSearch_TSc04_PO();
-    const searchParticularProduct = new SearchParticularProduct_TSc04_PO(); 
-    const filterManFromCheckbox =  new FilterMenFromMarvelComic_TSc04_PO(); 
+    const searchParticularProduct = new SearchParticularProduct_TSc04_PO();
+    const filterManFromCheckbox = new FilterMenFromMarvelComic_TSc04_PO();
     const redirectToSingleProduct = new RedirectToSingleProductPage_Tsc05_PO();
     const scrollToSeeProductDetails = new ScrollToSeeDetails_TSc05_PO();
-    const verifyOtherInfo = new VerifyOtherProductInfo_TSc05_PO(); 
+    const verifyOtherInfo = new VerifyOtherProductInfo_TSc05_PO();
     const verifyPrice = new VerifyPrice_TSc05_PO();
     const serviceFaqsLink = new ValidateServiceFAQsLink_Tsc05_PO();
     const verifyButton = new VerifyButtons_TSc06_PO();
     const validateWishlistBtn = new ValidateWishlistButton_TSc06_PO();
-    const RETURNS= new ReturnsSection_TSc06_PO();
+    const RETURNS = new ReturnsSection_TSc06_PO();
     const deleteFromWishlist = new DeleteFromWishlist_TSc06_Po();
-    const bagIcon = new ClickOnBagIconOnWishlist_TSc06_PO(); 
+    const bagIcon = new ClickOnBagIconOnWishlist_TSc06_PO();
     const clickOnImage = new ClickOnProdImgInWishlist_TSc06_PO();
 
-const Login_PO=new Login();
-const Search_PO=new SearchVal();
-const Productpage_PO=new ProductPage();
-const SelectSize_PO=new SelectSize();
-const AddToBag_PO=new AddToBag();
-const CartHover_PO=new CartHover();
-const GoToBag_PO=new GoToBag();
-const CartPage_PO=new CartPage();
-const ProceedButton_PO=new ProceedButton();
-const UserName_PO=new UserName();
-const ProceedShipping_PO=new ProceedShipping();
-const OrderSummary_PO=new OrderSummaryPage();
-const FindLogo_PO=new FindIcon();
-const DeleteBtn_PO=new DeleteBtn();
-const EmptyMsg_PO=new EmptyBagMsg();
-const SignOut_PO=new SignOutBtn();
+    const Login_PO = new Login();
+    const Search_PO = new SearchVal();
+    const Productpage_PO = new ProductPage();
+    const SelectSize_PO = new SelectSize();
+    const AddToBag_PO = new AddToBag();
+    const CartHover_PO = new CartHover();
+    const GoToBag_PO = new GoToBag();
+    const CartPage_PO = new CartPage();
+    const ProceedButton_PO = new ProceedButton();
+    const UserName_PO = new UserName();
+    const ProceedShipping_PO = new ProceedShipping();
+    const OrderSummary_PO = new OrderSummaryPage();
+    const FindLogo_PO = new FindIcon();
+    const DeleteBtn_PO = new DeleteBtn();
+    const EmptyMsg_PO = new EmptyBagMsg();
+    const SignOut_PO = new SignOutBtn();
 
 
-before(()=>{
-    cy.fixture("example").then((data)=>{
-        globalThis.data=data;
+    before(() => {
+        cy.fixture("example").then((data) => {
+            globalThis.data = data;
+        })
+
+        cy.fixture('datas.json').then((data) => {
+            globalThis.data = data;
+        })
+
     })
-
-    cy.fixture('datas.json').then((data)=>{
-        globalThis.data = data;
-    })
-
-})
-beforeEach(()=>{
+    beforeEach(() => {
         cy.viewport(1308, 800);
         cy.visit("/");
         homePage.visitLandingPage();
         loginButton_TS01_PO.visitHomePage();
 
 
-})
-  //PRATIBHAV
-  it("Varyfy and Validate the Login Button", () => {
+    })
+    //PRATIBHAV
+    it("Varyfy and Validate the Login Button", () => {
 
-    loginButton_TS01_PO.varifyLoginButton_TC_01();
-    loginButton_TS01_PO.validateLoginButton_TC_02();
+        loginButton_TS01_PO.varifyLoginButton_TC_01();
+        loginButton_TS01_PO.validateLoginButton_TC_02();
 
-  });
+    });
 
-  it('Varyfy and Validate the Terms&Condition', () => {
+    it('Varyfy and Validate the Terms&Condition', () => {
 
-    loginPage_TS01_PO.verifyTermsCondition_TC_03();
+        loginPage_TS01_PO.verifyTermsCondition_TC_03();
 
-    loginButton_TS01_PO.visitHomePage();
-    loginPage_TS01_PO.validateTermsCondition_TC_04();
-    
-    
-  });
+        loginButton_TS01_PO.visitHomePage();
+        loginPage_TS01_PO.validateTermsCondition_TC_04();
 
-  it('Varify the various Buttons on Login Page', () => {
-    loginPage_TS01_PO.varifyGoogleButton_TC_05();
 
-    loginButton_TS01_PO.visitHomePage();
-    loginPage_TS01_PO.varifyFacebookButton_TC_05();
+    });
 
-    loginButton_TS01_PO.visitHomePage();
-    loginPage_TS01_PO.varifyContinueButton_TC_05();
-    
-  });
+    it('Varify the various Buttons on Login Page', () => {
+        loginPage_TS01_PO.varifyGoogleButton_TC_05();
 
-  it('Varify and Validate to the Product logo', () => {
-    productLogo_TS02_PO.verifyProductLogo_TC_08();
+        loginButton_TS01_PO.visitHomePage();
+        loginPage_TS01_PO.varifyFacebookButton_TC_05();
 
-    productLogo_TS02_PO.validateProductPage_TC_22();
-    
-  });
+        loginButton_TS01_PO.visitHomePage();
+        loginPage_TS01_PO.varifyContinueButton_TC_05();
 
-  it('Varify and Validate to the Men Section', () => {
-    menSection_TS02_PO.varifyMenSection_TC_09();
+    });
 
-    menSection_TS02_PO.hoverMenSection_TC_35();
+    it('Varify and Validate to the Product logo', () => {
+        productLogo_TS02_PO.verifyProductLogo_TC_08();
 
-    menSection_TS02_PO.validateMenSection_TC_23();
-   
-  });
+        productLogo_TS02_PO.validateProductPage_TC_22();
 
-  it('Varify and Validate to the Women Section', () => {
-    womenSection_TS02_PO.varifyWomenSection_TC_10();
+    });
 
-    womenSection_TS02_PO.validateWomenSection_TC_24();
-  });
+    it('Varify and Validate to the Men Section', () => {
+        menSection_TS02_PO.varifyMenSection_TC_09();
 
-  it('Varify and Validate to the Kids Section', () => {
-    kidsSection_TS02_PO.varifyKidsSection_TC_11();
+        menSection_TS02_PO.hoverMenSection_TC_35();
 
-    kidsSection_TS02_PO.validateKidsSection_TC_25();
-  });
+        menSection_TS02_PO.validateMenSection_TC_23();
 
-  it('Varify and Validate to the Indie Section', () => {
-    indieSection_TS02_PO.varifyIndieSection_TC_12();
+    });
 
-    indieSection_TS02_PO.validateIndieSection_TC_26();
+    it('Varify and Validate to the Women Section', () => {
+        womenSection_TS02_PO.varifyWomenSection_TC_10();
 
-  });
+        womenSection_TS02_PO.validateWomenSection_TC_24();
+    });
 
-  it('Varify and Validate to the Home&Kitchen Section', () => {
-    h_kSection_TS02_PO.varifyH_KSection_TC_13();
+    it('Varify and Validate to the Kids Section', () => {
+        kidsSection_TS02_PO.varifyKidsSection_TC_11();
 
-    h_kSection_TS02_PO.validateH_KSection_TC_27();
-  });
+        kidsSection_TS02_PO.validateKidsSection_TC_25();
+    });
 
-  it('Varify and Validate to the Customer Care', () => {
-    customerCare_TS02_PO.varifyCutomerCare_TC_16();
+    it('Varify and Validate to the Indie Section', () => {
+        indieSection_TS02_PO.varifyIndieSection_TC_12();
 
-    customerCare_TS02_PO.validateCustomerCare_TC_30();
-  });
+        indieSection_TS02_PO.validateIndieSection_TC_26();
 
-  it('Varify and Validate to the AjioLuxe', () => {
-    ajioLuxe_TS02_PO.varifyAjioLuxe_TC_18();
+    });
 
-    ajioLuxe_TS02_PO.validateAjioLuxe_TC_31();
-  });
+    it('Varify and Validate to the Home&Kitchen Section', () => {
+        h_kSection_TS02_PO.varifyH_KSection_TC_13();
 
+        h_kSection_TS02_PO.validateH_KSection_TC_27();
+    });
 
-  it('Varify and Validate to the  Add to Cart', () => {
-      addToCart_TS02_PO.varifyAddTOCArt_TC_19();
+    it('Varify and Validate to the Customer Care', () => {
+        customerCare_TS02_PO.varifyCutomerCare_TC_16();
 
-      addToCart_TS02_PO.validateAddTOCart_TC_33();
-  });
+        customerCare_TS02_PO.validateCustomerCare_TC_30();
+    });
 
-  it('Varify and Validate to the Searchbar', () => {
-    searchbar_TS02_PO.varifySearchbar_TC_21();
+    it('Varify and Validate to the AjioLuxe', () => {
+        ajioLuxe_TS02_PO.varifyAjioLuxe_TC_18();
 
-    searchbar_TS02_PO.validateSearchbar_TC_34();
-  });
+        ajioLuxe_TS02_PO.validateAjioLuxe_TC_31();
+    });
 
 
-  it('Varify the Carousel Section on Menpage', () => {
-    carouselSection_TS03_PO.varifyCarouselSection_TC_42();
-  });
+    it('Varify and Validate to the  Add to Cart', () => {
+        addToCart_TS02_PO.varifyAddTOCArt_TC_19();
 
-  it('Verify the Categories of the Men page', () => {
-    menPageCategories_TS03_PO.varifySponsorBrand_TC_36();
+        addToCart_TS02_PO.validateAddTOCart_TC_33();
+    });
 
-    menPageCategories_TS03_PO.varifyBloomingToday_TC_37();
-  });
+    it('Varify and Validate to the Searchbar', () => {
+        searchbar_TS02_PO.varifySearchbar_TC_21();
 
-  it('Log all categories on Mens page', () => {
-    logAllCategories_TS03_PO.logAllCategories_TC_43();
-  });
+        searchbar_TS02_PO.validateSearchbar_TC_34();
+    });
 
 
-  it('Validate Login and Logout of the application', () => {
-    loginApplication_TS01_PO.loginApp_TC_07();
+    it('Varify the Carousel Section on Menpage', () => {
+        carouselSection_TS03_PO.varifyCarouselSection_TC_42();
+    });
 
-    postLoginTest_TS02_PO.validateSignOut_TC_29();
-  });
+    it('Verify the Categories of the Men page', () => {
+        menPageCategories_TS03_PO.varifySponsorBrand_TC_36();
 
-  it('Varify and Validate the My Account and Signout', () => {
-    loginApplication_TS01_PO.loginApp_TC_07();
+        menPageCategories_TS03_PO.varifyBloomingToday_TC_37();
+    });
 
-    postLoginTest_TS02_PO.varifyMyAccount_TC_14();
+    it('Log all categories on Mens page', () => {
+        logAllCategories_TS03_PO.logAllCategories_TC_43();
+    });
 
-    postLoginTest_TS02_PO.varifySignOut_TC_15();
 
-    postLoginTest_TS02_PO.validateMyAccount_TC_28();
-    
-  });
+    it('Validate Login and Logout of the application', () => {
+        loginApplication_TS01_PO.loginApp_TC_07();
 
-  it('Varify and Validate to the wishlit', () => {
-      wishlist_TS02_PO.varifyWishlist_TC_20();
+        postLoginTest_TS02_PO.validateSignOut_TC_29();
+    });
 
-      wishlist_TS02_PO.validateWishlist_TC_32();
-  });
- 
-  //abhay
+    it('Varify and Validate the My Account and Signout', () => {
+        loginApplication_TS01_PO.loginApp_TC_07();
 
-  it('Verification of input tag ( TC-44 ) ', () => {
-    verifyInput.inputTag;           
-});
+        postLoginTest_TS02_PO.varifyMyAccount_TC_14();
 
-it("Validate the input tag ( TC-45 )",()=>{
-    validateInput.inputValueAttr();
-});
+        postLoginTest_TS02_PO.varifySignOut_TC_15();
 
-it('For any pseudowords, it will redirect to no product found page ( TC-46 )', () => {
+        postLoginTest_TS02_PO.validateMyAccount_TC_28();
 
- pseudoword.pseudowordSearch(data.pseudoWord);  
- pseudoword.assertionOfText;
- pseudoword.assertOfPseudoWordInUrl;
+    });
 
-});
+    it('Varify and Validate to the wishlit', () => {
+        wishlist_TS02_PO.varifyWishlist_TC_20();
 
-it.skip("After clicking on input Select any product from dropdown then user will redirect to that page ( TC-47 )", ()=>{
+        wishlist_TS02_PO.validateWishlist_TC_32();
+    });
 
- redirectByDropdown.pressEnterInInputTag();
- redirectByDropdown.selectFromDropdown();
- redirectByDropdown.assertToRedirectPage();  
+    //abhay
 
-})
+    it('Verification of input tag ( TC-44 ) ', () => {
+        verifyInput.inputTag;
+    });
 
-it("Search for the particular product which is 'Marvel Comics' ( TC-48 ) ", ()=>{
+    it("Validate the input tag ( TC-45 )", () => {
+        validateInput.inputValueAttr();
+    });
 
-searchParticularProduct.assertTheInputSearchTag();
-searchParticularProduct.searchMarvelComics();
-searchParticularProduct.assertTheRedirectedPage();
+    it('For any pseudowords, it will redirect to no product found page ( TC-46 )', () => {
 
-})
+        pseudoword.pseudowordSearch(data.pseudoWord);
+        pseudoword.assertionOfText;
+        pseudoword.assertOfPseudoWordInUrl;
 
-it("Filter for men on marvel comics page ( TC-49 )", ()=>{
+    });
 
-searchParticularProduct.searchMarvelComics();
-searchParticularProduct.assertTheRedirectedPage();
-filterManFromCheckbox.filterMan();
-filterManFromCheckbox.assertAfterFilterMan();   
-})
+    it.skip("After clicking on input Select any product from dropdown then user will redirect to that page ( TC-47 )", () => {
 
-it("Open the first product visible on the page ( TC-50 )", ()=>{
+        redirectByDropdown.pressEnterInInputTag();
+        redirectByDropdown.selectFromDropdown();
+        redirectByDropdown.assertToRedirectPage();
 
-searchParticularProduct.searchMarvelComics();
-filterManFromCheckbox.filterMan();
-filterManFromCheckbox.assertAfterFilterMan();
-redirectToSingleProduct.selectingTheFirstProduct();
-redirectToSingleProduct.assertTheCap();
-})
+    })
 
-it("Scroll to see product details  ( TC-51 )", ()=>{
+    it("Search for the particular product which is 'Marvel Comics' ( TC-48 ) ", () => {
 
- searchParticularProduct.searchMarvelComics();
- filterManFromCheckbox.filterMan();
- redirectToSingleProduct.selectingTheFirstProduct();
- redirectToSingleProduct.assertTheCap();
- scrollToSeeProductDetails.scrollPage();
- scrollToSeeProductDetails.assertTheDetails();
+        searchParticularProduct.assertTheInputSearchTag();
+        searchParticularProduct.searchMarvelComics();
+        searchParticularProduct.assertTheRedirectedPage();
 
-})
+    })
 
-it("Veriy other information related to first product ( TC-52 )", ()=>{
+    it("Filter for men on marvel comics page ( TC-49 )", () => {
 
- searchParticularProduct.searchMarvelComics();
- filterManFromCheckbox.filterMan();
- redirectToSingleProduct.selectingTheFirstProduct();
- scrollToSeeProductDetails.scrollPage();
- verifyOtherInfo.clickOnOtherInformation();
- verifyOtherInfo.assertOtherInformation();
- 
-})
+        searchParticularProduct.searchMarvelComics();
+        searchParticularProduct.assertTheRedirectedPage();
+        filterManFromCheckbox.filterMan();
+        filterManFromCheckbox.assertAfterFilterMan();
+    })
 
-it("Verify the price of product after discount is applied. ( TC-54 )", ()=>{
+    it("Open the first product visible on the page ( TC-50 )", () => {
 
- searchParticularProduct.searchMarvelComics();
- searchParticularProduct.assertTheRedirectedPage();
- filterManFromCheckbox.filterMan();
- redirectToSingleProduct.selectingTheFirstProduct();
- verifyPrice.verifyPriceAfterDiscount();
-})
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        filterManFromCheckbox.assertAfterFilterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        redirectToSingleProduct.assertTheCap();
+    })
 
-it("Click on Service FAQs ( TC-55 ) " , ()=>{
+    it("Scroll to see product details  ( TC-51 )", () => {
 
- searchParticularProduct.searchMarvelComics();
- filterManFromCheckbox.filterMan();
- redirectToSingleProduct.selectingTheFirstProduct();
- serviceFaqsLink.clickOnServiceFAQsLink();
- serviceFaqsLink.assertServiceFAQsPage();
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        redirectToSingleProduct.assertTheCap();
+        scrollToSeeProductDetails.scrollPage();
+        scrollToSeeProductDetails.assertTheDetails();
 
-})
+    })
 
-it("Verify the ADD TO BAG and SAVE TO WISHLIST button ( TC-56)", ()=>{
+    it("Veriy other information related to first product ( TC-52 )", () => {
 
- searchParticularProduct.searchMarvelComics();
- filterManFromCheckbox.filterMan();
- verifyButton.verifyAddToBagButton();
- verifyButton.verifySaveToWishlistButton();
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        scrollToSeeProductDetails.scrollPage();
+        verifyOtherInfo.clickOnOtherInformation();
+        verifyOtherInfo.assertOtherInformation();
 
-})
+    })
 
-it("Click on SAVE TO WISHLIST button ( TC-57 )", ()=>{
+    it("Verify the price of product after discount is applied. ( TC-54 )", () => {
 
-searchParticularProduct.searchMarvelComics();
-filterManFromCheckbox.filterMan();
-validateWishlistBtn.clickSaveToWishlistButton();
-validateWishlistBtn.loginToSwitchPage(data.number);
-validateWishlistBtn.moveToWishlistPage();
-validateWishlistBtn.verifyProductOnWishlistPage();
-})
+        searchParticularProduct.searchMarvelComics();
+        searchParticularProduct.assertTheRedirectedPage();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        verifyPrice.verifyPriceAfterDiscount();
+    })
 
-it("Click functionality of 'click here' button in the RETURNS section. ( TC-58 )", ()=>{
+    it("Click on Service FAQs ( TC-55 ) ", () => {
 
-searchParticularProduct.searchMarvelComics();
-filterManFromCheckbox.filterMan();
-redirectToSingleProduct.selectingTheFirstProduct();
-RETURNS.clickOnClickHere();
-RETURNS.assertReturnsPage();
-})
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        serviceFaqsLink.clickOnServiceFAQsLink();
+        serviceFaqsLink.assertServiceFAQsPage();
 
-it("Validate the click functionality of bag icon  on the wishlist page. ( TC-59 )", ()=>{
+    })
 
-searchParticularProduct.searchMarvelComics();
-filterManFromCheckbox.filterMan();
-redirectToSingleProduct.selectingTheFirstProduct();
-validateWishlistBtn.clickSaveToWishlistButton();
-validateWishlistBtn.loginToSwitchPage(data.number);
-validateWishlistBtn.moveToWishlistPage();
-deleteFromWishlist.clickOnDeleteIcon();
-deleteFromWishlist.assertToDeleteProduct() 
-})
+    it("Verify the ADD TO BAG and SAVE TO WISHLIST button ( TC-56)", () => {
 
-it("Validate the click functionality of bag icon  on the wishlist page. ( TC-60 )", ()=>{
-try{
-searchParticularProduct.searchMarvelComics();
-filterManFromCheckbox.filterMan();
-redirectToSingleProduct.selectingTheFirstProduct();
-validateWishlistBtn.clickSaveToWishlistButton();
-validateWishlistBtn.loginToSwitchPage(data.number);
-validateWishlistBtn.moveToWishlistPage();
-bagIcon.clickOnBagIcon();
-}
-catch (error) {
- expect(error.message).to.include('is not visible');
-}
-})
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        verifyButton.verifyAddToBagButton();
+        verifyButton.verifySaveToWishlistButton();
 
-it("Validate the click functionality of product image on the wishlist page. ( TC-61 )", ()=>{
-searchParticularProduct.searchMarvelComics();
-filterManFromCheckbox.filterMan();
-redirectToSingleProduct.selectingTheFirstProduct();
-validateWishlistBtn.clickSaveToWishlistButton();
-validateWishlistBtn.loginToSwitchPage(data.number);
-validateWishlistBtn.moveToWishlistPage();
-clickOnImage.clickOnProductImage();
-clickOnImage.assertForWishlistPageAgain();
+    })
 
-})
+    it("Click on SAVE TO WISHLIST button ( TC-57 )", () => {
+
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        validateWishlistBtn.clickSaveToWishlistButton();
+        validateWishlistBtn.loginToSwitchPage(data.number);
+        validateWishlistBtn.moveToWishlistPage();
+        validateWishlistBtn.verifyProductOnWishlistPage();
+    })
+
+    it("Click functionality of 'click here' button in the RETURNS section. ( TC-58 )", () => {
+
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        RETURNS.clickOnClickHere();
+        RETURNS.assertReturnsPage();
+    })
+
+    it("Validate the click functionality of bag icon  on the wishlist page. ( TC-59 )", () => {
+
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        validateWishlistBtn.clickSaveToWishlistButton();
+        validateWishlistBtn.loginToSwitchPage(data.number);
+        validateWishlistBtn.moveToWishlistPage();
+        deleteFromWishlist.clickOnDeleteIcon();
+        deleteFromWishlist.assertToDeleteProduct()
+    })
+
+    it("Validate the click functionality of bag icon  on the wishlist page. ( TC-60 )", () => {
+        try {
+            searchParticularProduct.searchMarvelComics();
+            filterManFromCheckbox.filterMan();
+            redirectToSingleProduct.selectingTheFirstProduct();
+            validateWishlistBtn.clickSaveToWishlistButton();
+            validateWishlistBtn.loginToSwitchPage(data.number);
+            validateWishlistBtn.moveToWishlistPage();
+            bagIcon.clickOnBagIcon();
+        }
+        catch (error) {
+            expect(error.message).to.include('is not visible');
+        }
+    })
+
+    it("Validate the click functionality of product image on the wishlist page. ( TC-61 )", () => {
+        searchParticularProduct.searchMarvelComics();
+        filterManFromCheckbox.filterMan();
+        redirectToSingleProduct.selectingTheFirstProduct();
+        validateWishlistBtn.clickSaveToWishlistButton();
+        validateWishlistBtn.loginToSwitchPage(data.number);
+        validateWishlistBtn.moveToWishlistPage();
+        clickOnImage.clickOnProductImage();
+        clickOnImage.assertForWishlistPageAgain();
+
+    })
 
 
     // mamta
@@ -437,65 +437,65 @@ clickOnImage.assertForWishlistPageAgain();
     it('Focus on search', () => {
         Search_PO.SearchBox();
         Search_PO.SelectVal();
-        
+
     });
     it('Product Page Visiblity', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertProductPage();
     });
     it('Find First Product', () => {
-        Search_PO.SelectByCategory();   
+        Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
     });
     it('Select Size', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
-        SelectSize_PO.SelectSizeProduct();   
+        SelectSize_PO.SelectSizeProduct();
     });
     it('AddToBagBtn', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
-        SelectSize_PO.SelectSizeProduct();   
+        SelectSize_PO.SelectSizeProduct();
         AddToBag_PO.AssertAddBtn();
     });
     it('Add Click To AddToBagBtn', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();
+        AddToBag_PO.ClickBagButton();
     });
     it('Hover Cart Button', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();
-       CartHover_PO.CartHovercard();
-       CartHover_PO.ProceedCheckOutBtn();
+        AddToBag_PO.ClickBagButton();
+        CartHover_PO.CartHovercard();
+        CartHover_PO.ProceedCheckOutBtn();
     });
     it('Proceed Button', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();
-       CartHover_PO.CartHovercard();
-       CartHover_PO.ProceedCheckOutBtn();
-       CartHover_PO.ClickProceedCheckOutBtn();
+        AddToBag_PO.ClickBagButton();
+        CartHover_PO.CartHovercard();
+        CartHover_PO.ProceedCheckOutBtn();
+        CartHover_PO.ClickProceedCheckOutBtn();
     });
     it('Go To Bag Btn', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();
-       GoToBag_PO.AssertGoToBagBtn();
-       GoToBag_PO.ClicKOnGoToBagBtn();
-       GoToBag_PO.RedirectToCart();
+        AddToBag_PO.ClickBagButton();
+        GoToBag_PO.AssertGoToBagBtn();
+        GoToBag_PO.ClicKOnGoToBagBtn();
+        GoToBag_PO.RedirectToCart();
 
     });
     it('Cart Page', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();
+        AddToBag_PO.ClickBagButton();
         CartPage_PO.AssertCartBtn();
         CartPage_PO.ClickCartBtn();
         CartPage_PO.AssertProduct();
@@ -505,7 +505,7 @@ clickOnImage.assertForWishlistPageAgain();
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();
+        AddToBag_PO.ClickBagButton();
         CartPage_PO.AssertCartBtn();
         CartPage_PO.ClickCartBtn();
         CartPage_PO.AssertProduct();
@@ -515,14 +515,14 @@ clickOnImage.assertForWishlistPageAgain();
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
-       AddToBag_PO.ClickBagButton();;
+        AddToBag_PO.ClickBagButton();;
         CartPage_PO.ClickCartBtn();
         ProceedButton_PO.AssertProceedButton();
         ProceedButton_PO.ClickOnProceedBtn();
         Login_PO.login();
     });
-it('Assert User Name', () => {
-    Search_PO.SelectByCategory();
+    it('Assert User Name', () => {
+        Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
         AddToBag_PO.ClickBagButton();
@@ -537,24 +537,24 @@ it('Assert User Name', () => {
         OrderSummary_PO.AssertProceedPayBtn();
         OrderSummary_PO.ProceedPayBtn();
         OrderSummary_PO.AssertOrderSummary();
-});
-it('Shipping Btn', () => {
-    Search_PO.SelectByCategory();
-    Productpage_PO.AssertFirstProduct();
-    SelectSize_PO.SelectSizeProduct();
-    AddToBag_PO.ClickBagButton();
-    CartPage_PO.AssertCartBtn();
-    CartPage_PO.ClickCartBtn();
-    // ProceedButton_PO.AssertProceedButton();
-    ProceedButton_PO.ClickOnProceedBtn();
-    Login_PO.login();
-    UserName_PO.AssertUserName(data.name);
-    ProceedShipping_PO.AssertShippingBtn();
-    ProceedShipping_PO.ClickShippingBtn();
-    
-});
-it('Order Details', () => {
-    Search_PO.SelectByCategory();
+    });
+    it('Shipping Btn', () => {
+        Search_PO.SelectByCategory();
+        Productpage_PO.AssertFirstProduct();
+        SelectSize_PO.SelectSizeProduct();
+        AddToBag_PO.ClickBagButton();
+        CartPage_PO.AssertCartBtn();
+        CartPage_PO.ClickCartBtn();
+        // ProceedButton_PO.AssertProceedButton();
+        ProceedButton_PO.ClickOnProceedBtn();
+        Login_PO.login();
+        UserName_PO.AssertUserName(data.name);
+        ProceedShipping_PO.AssertShippingBtn();
+        ProceedShipping_PO.ClickShippingBtn();
+
+    });
+    it('Order Details', () => {
+        Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
         AddToBag_PO.ClickBagButton();
@@ -569,10 +569,10 @@ it('Order Details', () => {
         OrderSummary_PO.AssertProceedPayBtn();
         OrderSummary_PO.ProceedPayBtn();
         OrderSummary_PO.AssertOrderSummary();
-    
-});
-it('Find Logo', () => {
-       Search_PO.SelectByCategory();
+
+    });
+    it('Find Logo', () => {
+        Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
         SelectSize_PO.SelectSizeProduct();
         AddToBag_PO.ClickBagButton();
@@ -587,25 +587,25 @@ it('Find Logo', () => {
         OrderSummary_PO.ProceedPayBtn();
         OrderSummary_PO.AssertOrderSummary();
         FindLogo_PO.ClickIconBtn();
-});
-it('Going Back To cart', () => {
-    Search_PO.SelectByCategory();
-    Productpage_PO.AssertFirstProduct();
-    SelectSize_PO.SelectSizeProduct();
-    AddToBag_PO.ClickBagButton();
-    CartPage_PO.AssertCartBtn();
-    CartPage_PO.ClickCartBtn();
-    ProceedButton_PO.ClickOnProceedBtn();
-    Login_PO.login();
-    UserName_PO.AssertUserName(data.name);
-    ProceedShipping_PO.AssertShippingBtn();
-    ProceedShipping_PO.ClickShippingBtn();
-    OrderSummary_PO.AssertProceedPayBtn();
-    OrderSummary_PO.ProceedPayBtn();
-    OrderSummary_PO.AssertOrderSummary();
-    FindLogo_PO.ClickIconBtn();
-    CartPage_PO.ClickCartBtn();
-});
+    });
+    it('Going Back To cart', () => {
+        Search_PO.SelectByCategory();
+        Productpage_PO.AssertFirstProduct();
+        SelectSize_PO.SelectSizeProduct();
+        AddToBag_PO.ClickBagButton();
+        CartPage_PO.AssertCartBtn();
+        CartPage_PO.ClickCartBtn();
+        ProceedButton_PO.ClickOnProceedBtn();
+        Login_PO.login();
+        UserName_PO.AssertUserName(data.name);
+        ProceedShipping_PO.AssertShippingBtn();
+        ProceedShipping_PO.ClickShippingBtn();
+        OrderSummary_PO.AssertProceedPayBtn();
+        OrderSummary_PO.ProceedPayBtn();
+        OrderSummary_PO.AssertOrderSummary();
+        FindLogo_PO.ClickIconBtn();
+        CartPage_PO.ClickCartBtn();
+    });
     it('Delete btn', () => {
         Search_PO.SelectByCategory();
         Productpage_PO.AssertFirstProduct();
