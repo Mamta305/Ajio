@@ -7,7 +7,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
    setupNodeEvents,
-   specPattern:"cypress/integration/AJIO_POM.js",
+   specPattern:"cypress/integration/POM.js",
    baseUrl:"https://www.ajio.com/",
   },
  chromeWebSecurity:false,
