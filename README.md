@@ -1,4 +1,5 @@
 <h1 align="center" id="title">Cypress Automation</h1>
+<h4 align='center'>( PAGE OBJECT MODEL )</h4>
 <h4>With Cypress, you can easily create tests for your modern web applications, debug them visually, and automatically run them in your continuous integration builds.</h4>
 <h2 align="center" id="title">Cypress Automation of AJIO e-commerce website</h2>
 
@@ -59,24 +60,20 @@
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Clone the repo</p>
+1. Clone the repo
 ```
-
 git clone https://github.com/Mamta305/Ajio.git
 ```
-
-<p>2. Install NPM packages</p>
+2. Install NPM packages
 ```
-
 npm install
 ```
-
 3. Open cypress dashboard
-
+```
 node_modules/.bin/cypress open
 ```
 
-4. Choose E2E Testing to view test cases on Any Browser
+4. Choose E2E Testing to view test cases in Any Browser
 ```
 
 
