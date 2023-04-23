@@ -60,23 +60,26 @@
 <h2>🛠️ Installation Steps:</h2>
 
 <p>1. Clone the repo</p>
-
 ```
+
 git clone https://github.com/Mamta305/Ajio.git
 ```
 
 <p>2. Install NPM packages</p>
-
 ```
+
 npm install
 ```
 
-node_modules/.bin/cypress open
+3. Open cypress dashboard
 
+node_modules/.bin/cypress open
 ```
 
-<p>3. Choose E2E Testing to view test cases on Any Browser</p>
-  
+4. Choose E2E Testing to view test cases on Any Browser
+```
+
+
 💻 Tech Stack
 
 Technologies used in the project:
