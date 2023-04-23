@@ -71,11 +71,11 @@ git clone https://github.com/Mamta305/Ajio.git
 npm install
 ```
 
-<p>3. Choose E2E Testing to view test cases on Any Browser</p>
+node_modules/.bin/cypress open
 
 ```
-npm start
 
+<p>3. Choose E2E Testing to view test cases on Any Browser</p>
   
 💻 Tech Stack
 
