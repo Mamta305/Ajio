@@ -1,4 +1,5 @@
 // TSc 01 - TSc 03
+//import { it } from "mocha";
 import "cypress-xpath";
 import AddToCart_TS02_PO from "../support/Page_object/AJI0_POM/AddToCart_TS02_PO";
 import AjioLuxe_TS02_PO from "../support/Page_object/AJI0_POM/AjioLuxe_TS02_PO";
@@ -287,7 +288,7 @@ describe('Cypress Automation of AJIO e-commerce website', () => {
 
     });
 
-    it.skip("After clicking on input Select any product from dropdown then user will redirect to that page ( TC-47 )", () => {
+    it("After clicking on input Select any product from dropdown then user will redirect to that page ( TC-47 )", () => {
 
         redirectByDropdown.pressEnterInInputTag();
         redirectByDropdown.selectFromDropdown();
